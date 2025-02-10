@@ -92,6 +92,16 @@ Task Done is a **web-based task management system** designed to help **teams** e
 
 We welcome contributions! Feel free to **fork** the repository and **submit a pull request**
 
+Fork the repository.
+
+Create a new branch (git checkout -b feature-branch).
+
+Commit your changes (git commit -m 'Added new feature').
+
+Push to the branch (git push origin feature-branch).
+
+Open a Pull Request.
+
 
 ## 📧 Contact
 
