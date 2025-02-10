@@ -88,4 +88,14 @@ Task Done is a **web-based task management system** designed to help **teams** e
 We welcome contributions! Feel free to **fork** the repository and **submit a pull request**
 
 
+## 📧 Contact
+
+For queries or collaborations, reach out to:
+
+Viraj Tharindu - virajtharindu1997@gmail.com
+
+Linkedin Username - https://www.linkedin.com/in/viraj-tharindu/
+
+
+
 
