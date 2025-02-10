@@ -74,9 +74,7 @@ Task Done is a **web-based task management system** designed to help **teams** e
    
 3. **Import the SQL database** file into **MySQL**. (.sql file is provided)
    
-4. **Configure the database connection** in `config.php`. (the template is provided)
-   
-5. **Start the server** and access the system via `localhost`.
+4. **Start the server** and access the system via `localhost`.
     
 
 ## 🔮 Future Enhancements
