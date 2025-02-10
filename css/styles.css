@@ -1,0 +1,1069 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+
+    margin: 0;
+    padding: 0;
+    height: 250vh;
+}
+
+
+
+
+
+
+
+/* Confirmation Box Styles */
+.confirmation-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears on top */
+    width: 400px;
+    text-align: center;
+}
+
+.confirmation-box h2 {
+    color: var(--dark-color);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.confirmation-box p {
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.confirmation-box .btn-confirm {
+    background-color: var(--success-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-box .btn-confirm:hover {
+    background-color: #218838;
+}
+
+.confirmation-box .btn-cancel {
+    background-color: var(--danger-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-box .btn-cancel:hover {
+    background-color: #c82333;
+}
+
+/* Optional: Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    margin-top: 100px;
+}
+
+
+
+.page-title {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Dashboard main section */
+.dashboard {
+    padding: 20px;
+    margin-top: 100px; /* Adjust for the fixed navbar */
+}
+
+
+
+/* Dashboard summary section */
+.dashboard-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Summary cards */
+.summary-card {
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.summary-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.summary-number {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Responsive dashboard layout */
+@media (max-width: 768px) {
+    .dashboard-summary {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .summary-card {
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Table styles */
+.task-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.task-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.task-table td {
+    background-color: var(--light-color);
+    padding: 15px;
+}
+
+.description-column {
+    width: 300px; /* Adjust this value to your preference */
+}
+
+
+
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.pagination button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.badge-red { background-color: #FF6347; }
+.badge-yellow { background-color: #FFD700; }
+.badge-green { background-color: #32CD32; }
+.badge-blue { background-color: #007BFF; }
+
+
+
+
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-save {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+.btn-cancel {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+
+
+.btn-edit {
+    background-color: #17a2b8; /* A blue color for edit */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #138496; /* Darker shade on hover */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* A red color for delete */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+
+
+/* Form styles */
+.task-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+
+/* Button styles */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+
+
+header {
+    background-color: #007BFF; /* Blue background */
+    padding: 0; /* Remove padding to allow navbar to extend fully */
+    width: 100%; /* Ensure header takes full width */
+
+    z-index: 1000;
+}
+
+
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%; /* Ensure navbar takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+
+    position: fixed; /* Fixed position for the navbar */
+    top: 0; /* Stick to the top */
+   
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between each link */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+}
+
+/* If you want to ensure the content inside the navbar doesn't stretch too wide on large screens */
+.navbar-content {
+    max-width: 1200px; /* Or any other max-width you prefer */
+    margin: 0 auto; /* Center the content */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+.search-form {
+    display: flex; /* Ensure the input and button are in a horizontal row */
+    align-items: center; /* Aligns the button and input vertically in the center */
+    background: none; /* Remove background */
+    border: none; /* Remove borders */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.search-input {
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 5px;
+    margin-left: 10px; /* Adds space between input and button */
+    border: #007BFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+.filter-section {
+    margin: 20px 0; /* Margin above and below the filter section */
+    display: flex; /* Use flexbox for alignment */
+    gap: 15px; /* Space between filter elements */
+    align-items: center; /* Center align vertically */
+}
+
+.filter-section label {
+    font-weight: bold; /* Bold font for labels */
+}
+
+.filter-section select {
+    padding: 5px; /* Padding for dropdowns */
+    font-size: 16px; /* Font size for dropdowns */
+}
+
+footer {
+    background-color: #f8f9fa; /* Light background color for footer */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center the content */
+    position: fixed;
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+}
+
+.pagination-controls {
+    margin: 0 auto; /* Centering */
+    display: inline-flex; /* Inline-flex for better alignment */
+    justify-content: center; /* Centering items horizontally */
+    align-items: center; /* Centering items vertically */
+}
+
+.pagination-btn {
+    background-color: #007bff; /* Bootstrap-like primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for buttons */
+    margin: 0 5px; /* Margin between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.pagination-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.pagination-numbers {
+    display: inline-flex; /* Inline-flex for numbers */
+}
+
+.pagination-numbers .pagination-btn {
+    background-color: transparent; /* Transparent background */
+    color: #007bff; /* Bootstrap-like primary color */
+    padding: 0; /* No padding */
+    margin: 0 5px; /* Margin between number buttons */
+}
+
+.pagination-btn.active {
+    background-color: #007bff; /* Active button color */
+    color: white;
+    font-weight: bold; /* Optional: Make active button bold */
+}
+.pagination-btn[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+
+
+
+/* Notification Bar Styles */
+.notification-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensures it's above all other content */
+}
+
+.notification-bar.show {
+    display: block ; /* Show when triggered */
+}
+
+.close-notification {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-notification:hover {
+    color: #000;
+}
+
+
+
+
+
+
+.notification-container {
+    position: relative; /* Position relative for badge positioning */
+    margin-right: auto; /* Pushes the notification button to the left corner */
+}
+
+.notification-btn {
+    background: none; /* No background */
+    
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 24px; /* Adjust icon size */
+    color: black; /* Match the text color */
+    position: relative; /* For positioning the badge */
+}
+
+
+
+.notification-badge {
+    position: absolute; /* Absolute positioning */
+    top: -5px; /* Adjust this value to position the badge */
+    right: -10px; /* Adjust this value to position the badge */
+    background-color: red; /* Badge background color */
+    color: #333; /* Badge text color */
+    border-radius: 50%; /* Circular badge */
+    padding: 3px 6px; /* Padding for badge */
+    font-size: 12px; /* Font size for badge */
+    display: flex; /* Flexbox to center text */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+}
+
+
+
+.suggestions {
+    border: 1px solid #ccc;
+    background: #fff;
+    position: absolute;
+    z-index: 1000;
+    width: calc(100% - 2px); /* Adjust for border */
+    max-height: 150px; /* Limit the height */
+    overflow-y: auto; /* Add scrollbar if needed */
+    display: none; /* Hidden by default */
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: #f0f0f0; /* Highlight on hover */
+}
+
+
+/* Error highlighting */
+.error {
+    border: 2px solid red;
+}
+
+/* Profile picture preview */
+#profile-picture-preview {
+    display: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+
+#signup-page {
+    min-height: 200vh; /* Ensure the page covers at least the full viewport height */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Align content vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center the content horizontally */
+    
+}
+
+#signup-page .container {
+    max-width: 600px; /* Adjust width to fit the form */
+    width: 100%;
+    min-height: auto; /* Ensure the container grows with content */
+    padding: 20px; /* Add padding for inner spacing */
+    margin: 100px auto; /* Center the container with spacing */
+    background-color: #ffffff; /* Optional background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for design */
+    border-radius: 10px; /* Optional rounded corners */
+    overflow: visible; /* Prevent content from being hidden */
+}
+
+
+/* ============================================= */
+/* Login Page Styles */
+/* ============================================= */
+
+#login-page {
+    min-height: 200vh; /* Ensure the page covers at least the full viewport height */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Align content vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center the content horizontally */
+}
+
+#login-page .container {
+    max-width: 600px; /* Match the width of the signup page */
+    width: 100%;
+    min-height: auto; /* Ensure the container grows with content */
+    padding: 20px; /* Add padding for inner spacing */
+    margin: 100px auto; /* Center the container with spacing */
+    background-color: #ffffff; /* Optional background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for design */
+    border-radius: 10px; /* Optional rounded corners */
+    overflow: visible; /* Prevent content from being hidden */
+}
+
+
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+/* Input styling */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+
+
+/* Error message styling */
+.error-message {
+    color: var(--danger-color);
+    margin-top: 10px;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+    #login-page .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form-group input {
+        font-size: 12px;
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%; /* Ensure navbar takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    position: fixed; /* Fixed position for the navbar */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.navbar .nav-left a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-left a:hover,
+.navbar .nav-left a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa; /* Light background color for footer */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center the content */
+    position: fixed;
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+}
+
+
+
+
+/* Confirmation Box Styles */
+.confirmation-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears on top */
+    width: 400px;
+    text-align: center;
+}
+
+.confirmation-box h2 {
+    color: var(--dark-color);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.confirmation-box p {
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.confirmation-box .btn-confirm {
+    background-color: var(--success-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-box .btn-confirm:hover {
+    background-color: #218838;
+}
+
+.confirmation-box .btn-cancel {
+    background-color: var(--danger-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-box .btn-cancel:hover {
+    background-color: #c82333;
+}
+
+/* Optional: Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+
+
+
+
+/* General Page Styling */
+#profile-page .container {
+    max-width: 750px; /* Balanced width for better layout */
+    width: 100%; /* Fully responsive */
+    margin: 100px auto; /* Center the container */
+    padding: 30px 80px; /* Add generous padding */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Increased gap for better spacing */
+}
+
+/* Profile Picture Section */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px; /* Increased gap for spacing */
+}
+
+.profile-picture {
+    text-align: center;
+    flex-basis: 40%; /* Ensures picture section takes appropriate space */
+    max-width: 200px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.profile-picture img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.profile-picture button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Softer corners */
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-picture button:hover {
+    background: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Profile Details Section */
+.profile-details {
+    flex: 1;
+    width: 100%; /* Full width for responsiveness */
+}
+
+.profile-details .form-group {
+    margin-bottom: 25px;
+}
+
+.profile-details .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600; /* Slightly bolder */
+    color: var(--dark-color);
+    font-size: 16px;
+}
+
+.profile-details .form-group input,
+.profile-details .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Slightly rounded corners */
+    font-size: 15px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-details .form-group input:focus,
+.profile-details .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4); /* Softer glow on focus */
+    outline: none;
+}
+
+.profile-details textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 120px;
+}
+
+/* Save Button Styling */
+.form-actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.form-actions .btn-save {
+    background-color: var(--success-color);
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.form-actions .btn-save:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #profile-page .container {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Adjust spacing for smaller screens */
+    }
+
+    .profile-picture {
+        flex-basis: 100%;
+    }
+
+    .profile-details .form-group label {
+        font-size: 14px; /* Smaller labels on mobile */
+    }
+
+    .form-actions {
+        text-align: center;
+    }
+
+    .form-actions .btn-save {
+        width: 100%;
+    }
+}
+
+
