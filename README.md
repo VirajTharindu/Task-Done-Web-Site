@@ -36,19 +36,19 @@ Task Done is a **web-based task management system** designed to help **teams** e
 
 ## 📧 ScreenShots
 
-[login]()
+[login](https://github.com/VirajTharindu/Task-Done-Web-Site/blob/main/Screenshots/login.png)
 
-[sign-up]()
+[sign-up](https://github.com/VirajTharindu/Task-Done-Web-Site/blob/main/Screenshots/sign-up.png)
 
-[dashboard]()
+[dashboard](https://github.com/VirajTharindu/Task-Done-Web-Site/blob/main/Screenshots/dashboard.png)
 
-[task-list]()
+[task-list](https://github.com/VirajTharindu/Task-Done-Web-Site/blob/main/Screenshots/task-list.png)
 
-[create-tasks]()
+[create-tasks](https://github.com/VirajTharindu/Task-Done-Web-Site/blob/main/Screenshots/create-tasks.png)
 
-[update-tasks]()
+[update-tasks](https://github.com/VirajTharindu/Task-Done-Web-Site/blob/main/Screenshots/update-tasks.png)
 
-[user profile]()
+[user profile](https://github.com/VirajTharindu/Task-Done-Web-Site/blob/main/Screenshots/user-profile.png)
 
 
 ## 🛠 Technologies Used
