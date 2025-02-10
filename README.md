@@ -40,7 +40,7 @@ Task Done is a **web-based task management system** designed to help **teams** e
 
 [sign-up]()
 
-[Dashboard]()
+[dashboard]()
 
 [task-list]()
 
