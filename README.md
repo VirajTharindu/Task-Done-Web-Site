@@ -62,19 +62,19 @@ Task Done is a **web-based task management system** designed to help **teams** e
 - **Styling & UI**: CSS for layout and responsiveness
   
 
-## 🏗 Installation Guide (add commands to the powershell & run)
+## 🏗 Installation Guide (add commands to the PowerShell & run)
 
 1. **Clone the repository**:
    
    
-   git clone https://github.com/your-username/task-done.git
+   git clone https://github.com/VirajTharindu/Task-Done-Web-Site.git
    
    
 2. **Set up a local server** using **XAMPP** or **WAMP**.
    
-3. **Import the SQL database** file into **MySQL**.
+3. **Import the SQL database** file into **MySQL**. (.sql file is provided)
    
-4. **Configure the database connection** in `config.php`.
+4. **Configure the database connection** in `config.php`. (the template is provided)
    
 5. **Start the server** and access the system via `localhost`.
     
