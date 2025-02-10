@@ -34,15 +34,22 @@ Task Done is a **web-based task management system** designed to help **teams** e
 - **Profile Management**: Users can update their profile details.
 
 
-## 🛠 Technologies Used
+## 📧 ScreenShots
 
 [login]()
+
 [sign-up]()
+
 [Dashboard]()
+
 [task-list]()
+
 [create-tasks]()
+
 [update-tasks]()
+
 [user profile]()
+
 
 ## 🛠 Technologies Used
 
