@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List - Task Management System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <a href="index.html" id="dashboard-link"
+            ><i class="fas fa-home"></i> Dashboard</a
+          >
+          <a href="task-list.html" id="task-list-link"
+            ><i class="fas fa-tasks"></i> Task List</a
+          >
+          <a href="create-task.html" id="create-task-link"
+            ><i class="fas fa-plus-circle"></i> New Task</a
+          >
+          <a href="profile.html" id="profile-link"
+            ><i class="fas fa-user"></i> Profile</a
+          >
+          <a href="signup.html" id="signup-link"
+            ><i class="fas fa-user-plus"></i> Sign Up</a
+          >
+          <a href="login.html" id="login-link"
+            ><i class="fas fa-sign-in-alt"></i> Login</a
+          >
+        </div>
+        <div class="nav-right">
+          <div class="notification-container">
+            <button class="notification-btn" aria-label="Notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge" id="notification-badge">3</span>
+            </button>
+          </div>
+          <form class="search-form" action="search.html" method="GET">
+            <input
+              type="text"
+              name="query"
+              placeholder="Search tasks..."
+              class="search-input"
+            />
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <a href="javascript:void(0);" class="logout-btn" id="logoutBtn"
+            ><i class="fas fa-sign-out-alt"></i> Logout</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Confirmation Box -->
+    <div id="confirmationBox" class="confirmation-box" style="display: none">
+      <h2>Logout Confirmation</h2>
+      <p>Do you need to Logout?</p>
+      <button id="confirmLogout" class="btn btn-confirm">Yes</button>
+      <button id="cancelLogout" class="btn btn-cancel">No</button>
+    </div>
+
+    <main class="container">
+      <h1 class="page-title"><i class="fas fa-plus-circle"></i> Task List</h1>
+
+      <div class="filter-section">
+        <label for="status-filter"><i class="fas fa-filter"></i> Status:</label>
+        <select id="status-filter">
+          <option value="all">All</option>
+          <option value="to-do">To-Do</option>
+          <option value="in-progress">In-Progress</option>
+          <option value="completed">Completed</option>
+        </select>
+
+        <label for="priority-filter"
+          ><i class="fas fa-sort-amount-down"></i> Priority:</label
+        >
+        <select id="priority-filter">
+          <option value="all">All</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+
+      <table class="task-table">
+        <thead>
+          <tr>
+            <th id="task-id-header" style="cursor: pointer">
+              Task ID <i class="fas fa-sort"></i>
+            </th>
+
+            <th>Task Title</th>
+
+            <th class="description-column">Description</th>
+            <th>Priority</th>
+            <th>Status</th>
+
+            <th id="deadline-header" style="cursor: pointer">
+              Deadline <i class="fas fa-sort"></i>
+            </th>
+
+            <th>Assigned to</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="task-list"></tbody>
+      </table>
+
+      <!-- Pagination controls -->
+      <div class="pagination">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-info">Page 1</span>
+        <button id="next-page">Next</button>
+      </div>
+
+      <a href="create-task.html" class="btn btn-add"
+        ><i class="fas fa-plus"></i> Add New Task</a
+      >
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Task Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="logout.js"></script>
+  </body>
+</html>
